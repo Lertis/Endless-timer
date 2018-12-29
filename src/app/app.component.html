@@ -1,0 +1,15 @@
+<h4>
+Counting : <span id="remaining"></span>
+</h4>
+<button mat-icon-button color="primary" (click)="start()" id="start" [disabled]="startD">
+  <mat-icon>play_arrow</mat-icon>
+</button>
+<button mat-icon-button color="primary" id="pause" [disabled]="pauseD" (click)="disP($event)">
+  <mat-icon>pause</mat-icon>
+</button>
+<button mat-icon-button color="primary" id="resume" [disabled]="resumeD" (click)="disR($event)">
+  <mat-icon>cached</mat-icon>
+</button>
+<button mat-icon-button color="primary" (click)="stop()" id="stop" [disabled]="stopD">
+  <mat-icon>stop</mat-icon>
+</button>
